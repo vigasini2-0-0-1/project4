@@ -1,0 +1,419 @@
+<html>
+<head>
+	<title>cgpa calculator</title>
+<style>
+table
+{
+text-align:center;
+    margin: 50px 385px;
+    width: 50%;
+}
+}
+input:hover
+{
+color:blue;
+font-weight:10px;
+font-weight:bold;
+background-color:cyan;
+}
+h1
+{
+font-family:BOLD;
+color:blue;
+text-decoration:underline;
+font-style:italic;
+font-weight:10px;
+text-align:center;
+}
+th
+{
+border:3px solid #ff0099e0;
+font-size:20px;font-weight:bold;
+background-color:#17f4e0e0;
+}
+td
+{
+border:2px solid #ff0099e0;
+background-color:#eaf2f2;
+
+}
+td:hover
+{
+background-color:silver;
+}
+select:hover
+{
+background-color:cyan;
+}
+table
+{
+background-color:#ff0099e0;
+border:4px solid #ff0099e0;
+}
+body
+{
+
+}
+</style>
+</head>
+<body >
+<h1>CGPA CALCULATOR</h1>
+<table border=3 cellspacing=10 cellpadding=8 >
+<tr>
+<th>SUBJECT</th>
+<th>CREDIT</th>
+<th>GRADE</th>
+<th>MARK</th>
+
+</tr>
+<tr>
+<td><label for="fname">subject 1</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc1" >4</td>
+<td><select  id="idg1" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+
+<td id="idm1"></td>
+</tr>
+<tr>
+<td><label for="fname">subject 2</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc2" >4</td>
+<td><select  id="idg2" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm2"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 3</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc3" >4</td>
+<td><select  id="idg3" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm3"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 4</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc4" >3</td>
+<td><select  id="idg4" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm4"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 5</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc5" >3</td>
+<td><select  id="idg5" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm5"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 6</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc6" >3</td>
+<td><select  id="idg6" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm6"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 1</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc7" >1</td>
+<td><select  id="idg7" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm7"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 2</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc8" >1</td>
+<td><select  id="idg8" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm8"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 3</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc9" >1</td>
+<td><select  id="idg9" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm9"></td>
+</tr>
+
+
+<tr>
+<td colspan=3 >TOTAL</td>
+<td id="idt"></td>
+</tr>
+<tr>
+<td colspan=3>Gpa</td>
+<td id="idgpa"></td>
+</tr>
+
+<tr>
+<td colspan=3>Cgpa</td>
+<td id="idcgpa"></td>
+</tr>
+<tr><td colspan=4><input type="submit" onclick="calc()" ></td></tr>
+</table>
+
+
+<table border=3 cellspacing=10 cellpadding=8 >
+<tr>
+<th>SUBJECT</th>
+<th>CREDIT</th>
+<th>GRADE</th>
+<th>MARK</th>
+
+</tr>
+<tr>
+<td><label for="fname">subject 1</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc10" >4</td>
+<td><select  id="idg10" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+
+<td id="idm10"></td>
+</tr>
+<tr>
+<td><label for="fname">subject 2</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc11" >3</td>
+<td><select  id="idg11" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm11"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 2</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc12" >3</td>
+<td><select  id="idg12" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm12"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 4</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc13" >3</td>
+<td><select  id="idg13" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm13"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 5</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc14" >3</td>
+<td><select  id="idg14" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm14"></td>
+</tr>
+
+<tr>
+<td><label for="fname">subject 6</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc15" >3</td>
+<td><select  id="idg15" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm15"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 1</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc16" >1</td>
+<td><select  id="idg16" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm16"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 2</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc17" >1</td>
+<td><select  id="idg17" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm17"></td>
+</tr>
+
+<tr>
+<td><label for="fname">lab 3</label>
+  <input type="text" id="fname" name="fname"><br></td>
+<td id="idc18" >1</td>
+<td><select  id="idg18" >
+	<option value="10" >S</option>
+	<option value="9" >A</option>
+	<option value="8" >B</option>
+	<option value="7" >C</option>
+	<option value="6" >D</option></select>
+</td>
+<td id="idm18"></td>
+</tr>
+
+
+<tr>
+<td colspan=3 >TOTAL</td>
+<td id="idt2"></td>
+</tr>
+<tr>
+<td colspan=3>gpa</td>
+<td id="idgpa2"></td>
+</tr>
+
+<tr>
+<td colspan=3>Cgpa</td>
+<td id="idcgpa2"></td>
+</tr>
+<tr><td colspan=4><input type="submit" onclick="calc2()" ></td></tr>
+</table><br><br>
+
+
+<script>
+var gpa,totcre=0,no,j,cgpa=0;
+
+var c2=[],m2=[],g2=[],i,total2=0,cgpa2,gpa2,totcre2=0;
+var c=[],m=[],g=[],i,total=0;var g,g2,gf;
+function calc(){
+
+
+for(i=1;i<=9;i++)
+{
+c[i]=document.getElementById("idc"+i).innerText;
+g[i]=document.getElementById("idg"+i).value;
+m[i]=c[i]*g[i];
+document.getElementById("idm"+i).innerHTML=m[i];
+total=total+m[i];
+totcre+=parseInt(c[i]);
+}
+
+gpa=total/totcre;
+document.getElementById("idt").innerHTML=total;
+
+document.getElementById("idgpa").innerHTML=gpa;
+
+cgpa=gpa;
+cgpa=cgpa.toFixed(2);
+document.getElementById("idcgpa").innerHTML=cgpa;
+
+}
+
+function calc2(){
+
+
+for(i=10;i<=18;i++)
+{
+c2[i]=document.getElementById("idc"+i).innerText;
+g2[i]=document.getElementById("idg"+i).value;
+m2[i]=c2[i]*g2[i];
+document.getElementById("idm"+i).innerHTML=m2[i];
+total2=total2+m2[i];
+totcre2+=parseInt(c2[i]);
+}
+
+gpa2=total2/totcre2;
+document.getElementById("idt2").innerHTML=total2;
+document.getElementById("idgpa2").innerHTML=gpa2;
+cgpa2=(total+total2)/(totcre+totcre2);
+cgpa2=cgpa2.toFixed(2);
+document.getElementById("idcgpa2").innerHTML=cgpa2;
+
+}
+
+</script>
+</body>
+</html>
+	
